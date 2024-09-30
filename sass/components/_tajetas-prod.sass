@@ -1,0 +1,59 @@
+.tarjeta
+    border: 1px solid black
+    height: 360px
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 50% auto
+    grid-template-areas: "arriba" "abajo"
+    .conteiner-imagen
+        grid-area: arriba
+        img
+            
+            width: 100%
+            height: 100%
+            object-fit: scale-down
+
+    .info
+        grid-area: abajo
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2,50px) auto 50px
+        grid-template-areas: "a" "b"  "c" "d"
+        .conteiner-descripcion
+            grid-area: a
+            text-align: center
+            background: #818274
+            color: #fff
+            text-transform: uppercase
+            align-content: center
+            p
+                margin: 0 10px
+        .conteiner-precio
+            grid-area: b
+            align-content: center
+            text-align: center
+            background: #506266
+            color: #fff
+            text-transform: uppercase
+            p
+                margin: 0 10px
+        .conteiner-boton-agreggar
+            grid-area: d
+            align-content: center
+            text-align: center
+            background: #10454F 
+            a
+                text-decoration: none
+                color: #fff
+                &:hover
+                    color: #BDE038
+            .texto-tarjeta
+                @media screen and (max-width:374px)
+                    display: none       
+        .conteiner-marca
+            grid-area: c
+            @include centrar
+            background: #1ba6c2 
+            p
+                margin: auto
+            

@@ -1,0 +1,10 @@
+{
+    "usuarios":[
+        {
+            "correo":"guillermo@gmail.com",
+            "alias":"guille",
+            "contraseña":"1234",
+            "provincia":"Tucuman"
+        }
+    ]
+}

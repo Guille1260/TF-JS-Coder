@@ -1,0 +1,143 @@
+{
+  "productos" : [
+    {
+       "id": "0001",
+       "destacado" : true,
+       "referencia":["hombre","arquero"],
+       "categorias":["guantes","arquero","hombre","mujer","niños"],
+       "titulo":"GUANTE ATTRAKT STORM INFINITY",
+       "marca": "Reuch",
+       "talle": ["5","6","7","8","11"],
+       "cantidad": "10",
+       "precio" : 111000,
+       "color":"negro",
+       "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/storm-infinity-3-png-dfdde6b454c92d7e7617132113015191-1024-1024.webp"
+    },
+    {
+      "id": "0002",
+      "destacado" : false,
+      "referencia":["hombre","arquero"],
+      "categorias":["guantes","arquero","hombre","mujer","niños"],
+      "titulo":"GUANTE ATTRAKT PRO FUSION ADVANCE TEMP 2023",
+      "marca": "Reuch",
+      "talle": ["9","10"],
+      "cantidad": "10",
+      "precio" : 100000,
+      "color":"naranja",
+      "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/por-advance-fusion-dos-png1-71c7dc5056b01d304116892743185994-1024-1024.webp"
+   },
+   {
+      "id": "0003",
+      "destacado" : false,
+      "referencia":["hombre","arquero"],
+      "categorias":["guantes","arquero","hombre","mujer","niños"],
+      "titulo":"GUANTE PURE CONTACT PRIME AQUA",
+      "marca": "Reuch",
+      "talle": ["7","8","9","10"],
+      "cantidad": "10",
+      "precio" : 78000,
+      "color":["naranja","azul"],
+      "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/pure-contact-aqua-dos1-d533a572a5d603924416650800705186-1024-1024.webp"
+    },
+    {
+      "id": "0004",
+      "destacado" : true,
+      "referencia":["hombre","arquero"],
+      "categorias":["guantes","arquero","hombre","mujer","niños"],
+      "titulo":"GUANTE ATTRAKT STORM INFINITY",
+      "marca": "Reuch",
+      "talle": ["5","6","7","8","9","10"],
+      "cantidad": "5",
+      "precio" : 56500,
+      "color":"negro",
+      "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/storm-infinity-3-png-dfdde6b454c92d7e7617132113015191-1024-1024.webp"
+   },
+   {
+      "id": "0005",
+      "destacado" : false,
+      "referencia":["hombre","arquero"],
+      "categorias":["pantalon","arquero","hombre","mujer","niños"],
+      "titulo":"PANTALÓN PRINCE PARK",
+      "marca": "Reuch",
+      "talle": ["S","M","L","XL","XXL"],
+      "cantidad": "5",
+      "precio" : 40500,
+      "color":"negro",
+      "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/pantalon-prince-park-11-e8b2ca5fa364340b2416620610481842-1024-1024.webp"
+    }
+    ,
+    {
+      "id": "0006",
+      "destacado" : true,
+      "referencia":["hombre","arquero"],
+      "categorias":["pantalon","arquero","hombre","mujer","niños"],
+      "titulo":"PANTALÓN PRINCE PARK 3/4",
+      "marca": "Reuch",
+      "talle": ["S","M","L","XL","XXL"],
+      "cantidad": "5",
+      "precio" : 38500,
+      "color":"negro",
+      "imagen":"https://acdn.mitiendanube.com/stores/144/702/products/pantalon-prince-park-3-4-11-89e7fea5528a2bac7416620609173324-1024-1024.webp"
+    },
+    {
+      "id": "0007",
+      "destacado" : false,
+      "referencia":["mujer"],
+      "categorias":["calza"],
+      "titulo":"CALZA PUMA",
+      "marca": "Reuch",
+      "talle": ["M","L","XL","XXL"],
+      "precio" : 38500,
+      "color":["negro"],
+      "imagen":"https://marathon.vtexassets.com/arquivos/ids/405679-300-300?v=638350752539230000&width=300&height=300&aspect=true"
+    },
+    {
+      "id": "0008",
+      "destacado" : true,
+      "referencia":["mujer"],
+      "categorias":["calza"],
+      "titulo":"CALZA PUMA CORTA",
+      "marca": "Puma",
+      "talle": ["M","L","XL","XXL"],
+      "precio" : 38500,
+      "color":["negro"],
+      "imagen":"https://marathon.vtexassets.com/arquivos/ids/405615-300-300?v=638350752407670000&width=300&height=300&aspect=true"
+    },
+    {
+      "id": "0010",
+      "destacado" : true,
+      "referencia":["niño"],
+      "categorias":["buzo"],
+      "titulo":"BUZO TOPPER DE NIÑO",
+      "marca": "TOPPER",
+      "talle": ["S","M","L","XL","XXL"],
+      "precio" : 38500,
+      "color":["negro"],
+      "imagen":"https://marathon.vtexassets.com/arquivos/ids/273901-300-300?v=638213212539900000&width=300&height=300&aspect=true"
+    },
+    {
+      "id": "0011",
+      "destacado" : true,
+      "referencia":["hombre"],
+      "categorias":["remera"],
+      "titulo":"REMERA DE HOMBRE",
+      "marca": "TOPPER",
+      "talle": ["XL","XXL"],
+      "precio" : 38500,
+      "color":["negro"],
+      "imagen":"https://marathon.vtexassets.com/arquivos/ids/347308-300-300?v=638214079116670000&width=300&height=300&aspect=true"
+    },
+    {
+      "id": "0012",
+      "destacado" : false,
+      "referencia":["running","zapatillas"],
+      "categorias":["calzado"],
+      "titulo":"ZAPATILLAS",
+      "marca": "TOPPER",
+      "talle": ["38","39","40","41","42"],
+      "precio" : 308500,
+      "color":["blanco"],
+      "imagen":"https://marathon.vtexassets.com/arquivos/ids/440533-300-300?v=638422471274330000&width=300&height=300&aspect=true"
+    }
+  ]
+}

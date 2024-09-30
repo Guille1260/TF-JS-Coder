@@ -1,0 +1,82 @@
+#registrar
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 90vh
+    grid-template-areas: "tit" "cuer"
+    align-content: center
+    .conteiner-titulox
+        grid-area: tit
+        text-align: center
+        background: grey
+        border-bottom: 2px solid black
+        color: #fff
+    .conteiner-cuerpox
+        grid-area: cuer
+        align-content: center
+        .conteiner-formulario 
+            width: 90%
+            height: 500px
+            border: 1px solid black
+            margin: auto
+            border-radius: 20px
+            display: grid
+            grid-template-columns: 1fr       
+            grid-template-areas: "t""c"
+            row-gap: 10px
+            background: #161F30
+            color: #fff
+            @media screen and (min-width:767px)
+                width: 80%
+            @media screen and (min-width:1023px)
+                width: 70%
+            .conteiner-titulo
+                grid-area: t
+                text-align: center
+                align-content: center
+                border-bottom: 2px solid #fff
+                color: #fff
+            .conteiner-cuerpo
+                grid-area: c
+                margin-top: 16px
+                height: 100%
+                width: 100%
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-areas: "uno" "dos"  "tres" "cuatro" "cinco" "seis" "siete "
+                @media screen and (min-width:1023px)
+                    grid-template-columns: 1fr 1fr
+                    grid-template-areas: "uno dos " "tres cuatro" "cinco seis" "siete siete"
+                    row-gap: 20px
+                    column-gap: 10px               
+                .conteiner-email
+                    grid-area: uno
+                    text-align: center
+                    @include centrar
+                .conteiner-alias
+                    grid-area: dos
+                    text-align: center
+                    @include centrar
+                .conteiner-contraseña
+                    grid-area: tres
+                    text-align: center
+                    @include centrar
+                .conteiner-contraseña-denuevo
+                    grid-area: cuatro
+                    text-align: center
+                    @include centrar
+                .conteiner-provincia
+                    grid-area: cinco
+                    text-align: center
+                    @include centrar
+                .conteiner-buton
+                    grid-area: seis
+                    text-align: center
+                    @include centrar
+                    
+                .conteiner-inicio
+                    grid-area: siete
+                    text-align: center
+                    @include centrar
+                    a
+                        text-decoration: none
+                    

@@ -1,0 +1,140 @@
+#ayuda
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 60px auto
+    grid-template-areas: "titulo" "preguntas" "talla"
+    row-gap: 10px
+    .conteiner-titulo
+        grid-area: titulo
+        text-align: center
+        align-content: center
+        background: grey
+        border-bottom: 2px solid black
+        color: #fff
+    .conteiner-preguntas-movil
+        grid-area: preguntas
+        text-align: center
+        h4 
+            background:  #173540
+            color: #84B026 
+        .conteiner-sub
+            background: grey
+            color: #fff
+            @include centrar
+        
+    @media screen and (min-width:768px)
+        .conteiner-preguntas
+            grid-area: preguntas
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: 60px  auto
+            grid-template-areas: "t" "c"            
+            .conteiner-sub
+                grid-area: t
+                background: grey
+                color: #fff
+                @include centrar
+            .cuerpo
+                grid-area: c
+                display: grid
+                grid-template-columns: 1fr 1fr 
+                grid-template-rows: repeat(1,auto)
+                grid-template-areas: "uno dos""tres tres "
+                row-gap: 10px
+                .container-envios-entrega
+                    grid-area: uno
+                    .conteiner-titulox
+                        margin: 5px
+                        text-align: center  
+                        background:  #173540
+                        color: #84B026
+                    .conteiner-cuerpo
+                        margin: 10px
+                        @include sub-ayuda
+                .container-devoluciones
+                    grid: dos
+                    .conteiner-titulox
+                        margin: 5px
+                        text-align: center
+                        background:  #173540
+                        color: #84B026
+                    .conteiner-cuerpo
+                        margin: 10px
+                        @include sub-ayuda
+                .container-info-prod
+                    grid-area: tres
+                    .conteiner-titulox
+                        margin: 5px
+                        text-align: center
+                        background:  #173540
+                        color: #84B026
+                    .conteiner-cuerpo
+                        display: grid
+                        grid-template-columns: 1fr 1fr 
+                        margin: 10px
+                        @include sub-ayuda
+                        .separador
+                            margin: 5px
+    .conteiner-talle
+        grid-area: talla
+        display: grid
+        grid-template-columns: 1fr 
+        grid-template-rows: 60px 
+        grid-template-areas: "titu " "guantes" "calzado" "ropa " 
+        row-gap: 10px
+        img
+            margin: 10px
+            width: 90%
+        @media screen and (min-width:768px)
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 60px
+            grid-template-areas: "titu titu" "guantes calzado" "ropa ropa " 
+            row-gap: 10px
+            column-gap: 10px
+        .conteiner-titulox
+            grid-area: titu
+            @include centrar
+            background: grey
+            border-bottom: 2px solid black
+            color: #fff
+            margin-bottom: 10px
+        .conteiner-guantes
+            grid-area: guantes
+            text-align: center
+            h4
+                background:  #173540
+                color: #84B026
+        .conteiner-calzados
+            grid-area: calzado
+            text-align: center
+            h4
+                background:  #173540
+                color: #84B026
+        .conteiner-ropa
+            grid-area: ropa
+            text-align: center
+            display: grid
+            grid-template-columns: 1fr 
+            grid-template-areas: "a" "c"
+            h4
+                background:  #173540
+                color: #84B026
+            .conteiner-titulox
+                grid-area: a
+                
+            .caja
+                display: grid
+                grid-template-columns: 1fr 
+                grid-template-areas: "b ""d"
+                @media screen and (min-width:768px)
+                    grid-template-columns: 1fr 1fr 
+                    grid-template-areas: "b d"
+                    column-gap: 10px
+                    row-gap: 10px
+                .hombre
+                    grid-area: b
+                    
+                .mujer
+                    grid-area: d
+                    
+            

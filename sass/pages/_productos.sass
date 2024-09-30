@@ -1,0 +1,94 @@
+#prod
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 70px auto
+    grid-template-areas: "t" "c"
+    row-gap: 20px
+    .conteiner-titulox
+        grid-area: t
+        background: grey
+        color: #fff
+        border-bottom: 2px solid black
+        h1
+            @include centrar
+    .conteiner-productos
+        grid-area: c
+        display: grid
+        grid-template-columns: 1fr 
+        grid-template-areas: "aside" "contenido" 
+        row-gap: 20px
+        column-gap: 10px
+        @media screen and (min-width:768px)
+            grid-template-columns: 20% 80%
+            grid-template-areas: "aside contenido"
+    .conteiner-filtros
+        grid-area: aside
+        padding: 5px
+        .botonesCategoria
+            color: #042940
+            background: #9FC131
+            &:hover
+                scale: (1.1)
+        .texto-filto
+            text-transform: uppercase
+            color: #042940
+        @media screen and (max-width:767px)
+            .conteiner-filtros-desk
+                display: none
+                
+        @media screen and (min-width:768px)
+            .conteiner-filtros-movil
+                display: none
+
+    .conteiner-tarjetasx
+        grid-area: contenido
+        display: grid
+        grid-template-columns: 1fr 
+        
+        grid-template-areas: "orden" "tarjetas"
+        row-gap: 10px
+        
+        .ordenar
+            grid-area: orden
+        .conteiner-tarjetas
+            grid-area: tarjetas
+            display: grid
+            grid-template-columns: repeat(2,auto)
+            row-gap: 10px
+            column-gap: 5px
+
+            .conteiner-mensaje-sinproductos
+                width: 100%
+                @include centrar
+                p
+                    width: 100%
+                    font-size: 40px
+
+                    
+                
+                
+                    
+            @media screen and (min-width:768px)
+                grid-template-columns: repeat(4,auto)
+                .conteiner-mensaje-sinproductos
+                    width: 100%
+                    @include centrar
+
+                    p
+                        margin-top: -200px
+                        width: 100%
+                        font-size: 40px
+                        margin-left: 5%
+            @media screen and (min-width:1024px)
+                grid-template-columns: repeat(5,auto)
+                .conteiner-mensaje-sinproductos
+                    width: 100%
+                    @include centrar
+
+                    p
+                        margin-top: -200px
+                        width: 100%
+                        font-size: 40px
+                        margin-left: 30%
+            @media screen and (min-width:2000px)
+                grid-template-columns: repeat(6,auto)

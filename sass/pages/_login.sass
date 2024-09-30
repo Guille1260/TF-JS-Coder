@@ -1,0 +1,98 @@
+#loggin
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 90vh
+    grid-template-areas: "titu" "cuer"
+    align-content: center
+    .conteiner-titulox
+        grid-area: titu
+        text-align: center
+        background: grey
+        border-bottom: 2px solid black
+        color: #fff
+    .conteiner-cuerpo
+        grid-area: cuer
+        display: flex
+        .conteiner-formulario
+            width: 90%
+            height: 500px
+            border: 1px solid black
+            margin: auto
+            border-radius: 20px
+            background: #161F30
+            @media screen and (min-width:767px)
+                width: 50%
+            @media screen and (min-width:1023px)
+                width: 30%
+            .formulario
+                background: transparent
+                width: 100%
+                height: 100%
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-areas: "t" "a" "b" "c" "d" "e"
+                row-gap: 10px
+                a
+                    text-decoration: none
+                .conteiner-titulo
+                    grid-area: t
+                    @include centrar
+                    h2
+                        text-transform: uppercase
+                        color: #fff
+                    .img-login
+                        width: 30%
+                        border-radius: 100%
+                        border: 2px solid #000000
+                        box-shadow: 0px 15px 15px black
+                .conteiner-usuario
+                    grid-area: a
+                    @include centrar
+                    color: #fff
+                .conteiner-contraseña
+                    grid-area: b
+                    @include centrar
+                    color: #fff
+                    
+                .conteiner-pregunta
+                    grid-area: c
+                    @include centrar
+
+                .conteiner-buton
+                    grid-area: d
+                    @include centrar
+                .conteiner-registrarse
+                    grid-area: e
+                    @include centrar
+                    display: grid
+                    grid-template-columns: 1fr
+                    grid-template-areas: "a" "b"
+                    span
+                        grid-area: a
+                        margin: 10px
+                        @include centrar
+                        color: #fff
+                    .google
+                        margin: auto
+                        width: 80%
+                        grid-area: b
+                        display: grid
+                        grid-template-columns: 20% 70%
+                        grid-template-rows: auto
+                        grid-template-areas: "uno dos"
+                        @include centrar
+                        @media screen and (min-width:768px)
+                            width: 90%
+                        .lo
+                            grid-area: uno
+                            .img-gogle
+                                width: 40px
+                        .tex
+                            grid-area: dos
+                            p
+                                margin: auto
+                            
+                                
+                            
+                            
+            

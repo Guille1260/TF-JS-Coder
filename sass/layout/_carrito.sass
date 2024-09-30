@@ -1,0 +1,118 @@
+
+.offcanvas-header
+    background: #161F30
+    
+    .offcanvas-title
+        margin-left: 20%
+        color: #9FC131
+        font-size: 30px
+        @include efecto-link
+.offcanvas-body  
+    background: #C2C0A6
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 100px
+    grid-template-areas: "sup""inf"
+    
+    .cuerpo
+        grid-area: sup
+        .mensaje-vacio
+            color: #0D0D0D
+            text-transform: uppercase
+            @include centrar
+            font-size: 30px
+            margin-top: 50%
+        .cajita
+            display: grid
+            grid-template-columns: repeat(5,1fr)
+            row-gap: 10px
+            grid-template-areas: "izq mid1 mid2 mid3 der"
+            .conteiner-imagen
+                grid-area: izq
+                @include centrar
+                img
+                    object-fit: contain
+                    clip-path: circle(50%)
+                    width: 60px
+                    height: 60%
+            .conteiner-cantidad
+                grid-area: mid1
+                display: grid
+                margin: 10px
+                grid-template-columns: 1fr
+                grid-template-rows: 40% 50%
+                grid-template-areas: "sup""inf"
+                grid-row: 10px
+                .titulo
+                    grid-area: sup
+                    color: #9FC131
+                    
+                .cuerpo-caja
+                    grid-area: inf
+                    @include centrar
+            .conteiner-precio
+                grid-area: mid2
+                display: grid
+                margin: 10px
+                grid-template-columns: 1fr
+                grid-template-rows: 40% 50%
+                grid-template-areas: "sup""inf"
+                grid-row: 10px
+                .titulo
+                    grid-area: sup
+                    color: #9FC131
+                    
+                .cuerpo-caja
+                    grid-area: inf
+                    @include centrar
+            .conteiner-talle
+                grid-area: mid3
+                display: grid
+                margin: 10px
+                grid-template-columns: 1fr
+                grid-template-rows: 40% 50%
+                grid-template-areas: "sup""inf"
+                grid-row: 10px
+                select
+                    background: #038C73
+                .titulo
+                    grid-area: sup
+                    color: #9FC131
+                    
+                .cuerpo-caja
+                    grid-area: inf
+                    @include centrar
+            .conteiner-eliminar
+                grid-area: der
+                @include centrar
+                font-size: 20px
+    .botones
+        grid-area: inf
+        @include centrar
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-areas: "sup" "menor"
+        .superior
+            grid-area:  sup
+            color: #0D0D0D
+            text-transform: uppercase
+        .inferior-carito
+            grid-area: menor
+            display: grid
+            grid-template-columns: 1fr 1fr
+            column-gap: 10px
+            button
+               color: #fff
+               width: 120px 
+               border-radius: 30px
+               background: #84B026
+               text-transform: uppercase
+               &:hover
+                    color: #0D0D0D
+                    background: #014034
+               @media screen and (min-width: 1024px)
+                    width: 150px 
+                
+            
+        
+    

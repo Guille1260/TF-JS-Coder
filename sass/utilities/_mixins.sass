@@ -1,0 +1,97 @@
+@mixin efecto-link
+    position: relative
+    &::before
+        content: ""
+        border-bottom: 2px solid #DBF227
+        position: absolute
+        bottom: 4px
+        width: 0%
+        right: 0
+        transition: 0.4s
+    &::after
+        content: ""
+        border-bottom: 2px solid #DBF227
+        position: absolute
+        bottom: -2px
+        width: 0%
+        left: 0
+        transition: 0.4s
+    &:hover:before
+        width: 70%
+        
+    &:hover:after
+        width: 40%
+@mixin efecto-titulos
+    position: relative
+    &::before
+        content: ""
+        border-bottom: 5px solid #DBF227
+        position: absolute
+        bottom: 0px
+        width: 60%
+        right: 0
+        transition: 0.4s
+    &::after
+        content: ""
+        border-bottom: 5px solid #DBF227
+        position: absolute
+        bottom: -10px
+        width: 60%
+        left: 0
+        transition: 0.4s
+    
+
+
+        
+@mixin i-footer
+    color: #9FC131
+    font-size: 20px
+    text-transform: uppercase
+    &:hover
+        color: #fff 
+
+@mixin centrar
+    text-align: center
+    justify-content: center
+    justify-items: center
+    align-content: center
+    align-items: center
+
+@mixin sub-ayuda
+    h4 
+        background: #3D3D3D
+        color: #fff   
+        @include centrar
+    p
+        margin:  10px
+
+
+@mixin filtros
+    display: grid
+    grid-template-columns: 1f
+    grid-template-rows: 90% 10%
+    grid-template-areas: "imga" "boton"
+    .imagen
+        grid-area: imga
+        
+        .imagen-filtro
+            width: 90%
+            height: 90%
+            margin: 10px
+            border-radius: 50px
+            box-shadow: 10px 5px #00000094
+            &:hover
+                scale: (1.1)
+    .boton
+        grid-area: boton
+        @include centrar
+        a
+            color: #9FC131
+            text-transform: uppercase
+            padding: 10px 100px
+            background: #161F30
+            text-decoration: none
+            border-radius: 50px
+            &:hover
+                color: #fff
+            

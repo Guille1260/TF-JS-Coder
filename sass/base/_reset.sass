@@ -1,0 +1,18 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto auto
+    grid-template-areas: "encabezado" "principal" "pie"
+    .conteiner-header
+        grid-area: encabezado
+        
+    .seccion-principal
+        grid-area: principal
+        margin: 10px
+    .pie-de-pagina
+        grid-area: pie

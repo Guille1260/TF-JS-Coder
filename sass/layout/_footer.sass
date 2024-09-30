@@ -1,0 +1,123 @@
+.pie-de-pagina
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-areas: "s" "m" "b"
+    .superior
+        grid-area: s
+        background: grey
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        grid-template-areas: "izq" "der" 
+        row-gap: 10px
+        i 
+            font-size: 30px
+            &:hover
+                color: #fff
+                cursor: pointer
+        @media screen and (min-width:768px)
+            grid-template-columns: 1fr 1fr
+            grid-template-areas: "izq der"
+            
+        .informacion-envios
+            grid-area: izq
+            margin-top: 10px
+            text-align: center
+            
+        .informacion-cuotas
+            grid-area: der
+            margin-top: 10px
+            text-align: center        
+    .medio
+        grid-area: m
+        background: #161F30
+        .conteiner-mid
+            display: grid
+            text-align: center
+            justify-items: center
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(6,auto)
+            grid-template-areas: "pago" "envio"  "mapa" "formulario""contacto" "red"
+            row-gap: 20px
+            margin-top: 10px
+           
+            @media screen and (min-width:768px)
+                grid-template-columns: 1fr 1fr 1fr
+                grid-template-rows: repeat(2,auto)
+                grid-template-areas: "pago envio formulario "" mapa contacto red"
+            .conteiner-tarjetas1
+                grid-area: pago
+
+            .conteiner-tarjetas2
+                grid-area: envio
+                
+            .conteiner-redes
+                grid-area: red
+                a
+                    font-size: 30px
+                    margin: 0 10px
+                    color: #9FC131
+                    
+                    &:hover
+                        color: #0906c7
+                        .instagram
+                            color: #c7911e 
+                        .twitter
+                            color: #0c5a88
+                        .whatsapp
+                            color: green        
+            .conteiner-mapa
+                grid-area: mapa
+                .mapa
+                    @include  centrar
+                    a
+                        color: #9FC131
+                        text-transform: uppercase
+                        @include efecto-link
+                        &:hover
+                            color: #fff
+                    button
+                        color: #9FC131
+                        text-transform: uppercase
+                        @include efecto-link
+                        &:hover
+                            color: #fff
+            .conteiner-formulario
+                grid-area: formulario
+                i
+                    @include i-footer 
+            .conteiner-contacto
+                grid-area: contacto
+                i
+                    @include i-footer 
+                p
+                    justify-content: end
+                    line-height: 40px
+                    color: #9FC131 
+                    a
+                        text-decoration: none
+                        color: #9FC131
+                        &:hover
+                            color: #fff
+
+            //titulo de los grid del footer
+            .conteiner-titulo
+                color: #fff
+                text-transform: uppercase
+    .bajo
+        grid-area: b
+        background: #173540
+        text-align: center
+        color: #fff
+        a
+            text-decoration: none
+            color: #9FC131
+            font-size: 20px
+            text-transform: uppercase
+            @include efecto-link
+            &:hover
+                color: #fff
+            &::before
+                 bottom: 2px
+            
+           

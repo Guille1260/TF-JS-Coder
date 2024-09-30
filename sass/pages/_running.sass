@@ -1,0 +1,66 @@
+#mujer-hombre-arquero
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-areas: "titulos" "carrusel-fotos" "carrusel-prod" "filtro1" "filtro2"
+    row-gap: 30px
+    .conteiner-titulo
+        grid-area: titulos
+        text-align: center
+        background: grey
+        border-bottom: 2px solid black
+        color: #fff
+    .conteiner-carrucel
+        grid-area: carrusel-fotos
+        .item-fotos
+            height: 100px
+            img
+                object-fit: cover
+                object-position: center
+                background-size: cover
+    .destacados
+        grid-area: carrusel-prod
+    .filto-tipo
+        grid-area: filtro1
+        display: grid
+        text-align: center
+        grid-template-columns: 1fr
+        grid-template-areas: "H" "M" 
+        row-gap: 20px
+        @media screen and (min-width:768px) 
+            grid-template-columns: repeat(2,1fr)
+            grid-template-areas: "H M "
+            row-gap: 10px
+            column-gap: 10px 
+        .vestir
+            grid-area: H
+            row-gap: 10px
+            @include filtros
+            
+            
+        .Deportes
+            grid-area: M
+            row-gap: 10px
+            text-align: center
+            @include filtros
+        
+   
+    .filto-prendas
+        display: grid
+        text-align: center
+        grid-template-columns: 1fr
+        grid-template-areas: "r" "p" "b"
+        row-gap: 30px
+        @media screen and (min-width:768px) 
+            grid-template-columns: repeat(3,1fr)
+            grid-template-areas: "r p b"
+            row-gap: 10px
+            column-gap: 10px 
+        .Remeras
+            grid-area: r 
+            @include filtros
+        .Pantalones 
+            grid-area: p 
+            @include filtros
+        .buzos
+            grid-area: b
+            @include filtros

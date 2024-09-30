@@ -1,0 +1,120 @@
+
+.btn-lupa
+    color: #9FC131
+    text-align: center
+    
+    &:hover
+        color: #fff
+    @media screen and (max-width:700px)
+        position: absolute
+        left:  0
+        margin: auto
+        transform: translateY(-5px)
+.buscar
+    border: none
+    outline: none
+    background: none
+    border-bottom:  2px solid
+    padding: 2px
+    &::placeholder
+        text-align: center
+    &:focus
+        transition: .7s all
+        color: #fff
+    
+.buscar-grande
+    border: none
+    outline: none
+    background: none
+    border-bottom:  2px solid
+    color: #9FC131
+    width: 80%
+    position: relative
+    &::placeholder
+        text-align: center
+        color: #9FC131
+    &:focus
+        color: #fff
+    
+.btn-enviar-google
+    background: #9FC131
+    width: 150px     
+    &:hover
+        color: #fff   
+    
+.btn-enviar
+    background: #9FC131
+    width: 150px
+    box-shadow:  10px 5px 5px black
+    
+    &:hover
+        color: #fff
+        scale: (1.1)
+
+.añadir-carrito
+    width: 50%
+    background: #BDE038
+    &:hover
+        scale: (1.1)
+    
+.vermas
+    background: #9FC131
+    width: 80%
+    height: 60%
+    max-width: 450px
+    box-shadow:  10px 5px 5px black
+    &:hover
+        scale: (1.1)
+
+.btn-equis
+    color: #fff
+    position: absolute
+    font-size: 23px
+    right: 0
+.input-formu
+    border: none
+    outline: none
+    background: none
+    border-bottom:  2px solid
+    color: #9FC131
+    position: relative
+    width: 80%
+    &::placeholder
+        color: #fff   
+    &:focus
+        transition: .7s all
+        color: #fff
+    @media screen and (min-width:768px)
+        width: 60%
+    
+.boton-megabox
+    padding: 0px 65px
+    font-size: 17px
+    display: block
+    text-decoration: none
+    text-align: center
+    color: #fff
+    margin: auto
+    &:hover
+        background: #ffffff59
+        padding: 0px 65px
+
+
+
+@media screen and (min-width:1024px)
+    .conteiner-icono
+        display: none
+    
+    .texto-carrito
+        right: -6px   
+        
+@media screen and (max-width:768px)
+    #carro
+        display: none
+    
+    .btn-lupa
+        display: none
+@media screen and (max-width:1023px)
+    .carrox
+        display: none
+        

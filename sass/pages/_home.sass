@@ -1,0 +1,140 @@
+#home
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3,auto)
+    grid-template-areas: "fotos" "destacados" "somos" "formu"
+    row-gap: 20px
+    .carousel
+        grid-area: fotos
+            
+    .conteiner-destacados
+        grid-area: destacados
+        display: grid
+        grid-template-columns: 1fr 
+        grid-template-rows: 60px auto 60px
+        row-gap: 20px
+        grid-template-areas: "sb-titulo" "tarjetas" "bton"
+        .conteiner-titulo
+            grid-area: sb-titulo
+            background: grey
+            color: #fff
+            border-bottom: 2px solid black
+            h1
+                @include centrar
+            // @include  efecto-titulos
+        .conteiner-tarjetas
+            grid-area: tarjetas
+            display: grid
+            grid-template-columns:  1fr  1fr 
+            text-align: center
+            row-gap: 10px
+            column-gap: 10px
+            @media screen and (min-width:768px)
+                grid-template-columns: 1fr 1fr 1fr
+            @media screen and (min-width:1024px)
+                grid-template-columns: repeat(6,auto)
+            @media screen and (min-width:2000px)
+                grid-template-columns: repeat(7,auto)
+        .conteiner-boton
+            grid-area: bton
+            text-align: center
+            align-content: center
+            
+    .conteiner-somos
+        grid-area: somos
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-areas: "titu""texto-img"
+        row-gap: 10px
+        .conteiner-titulo
+            grid-area: titu
+            text-align: center
+            background: grey
+            color: #fff
+            border-bottom: 2px solid black
+            h2
+                @include centrar
+        .imagen-texto
+            margin: 5px
+            border: 1px solid black
+            grid-area: texto-img
+            display: grid
+            grid-template-columns: 1fr
+            // grid-template-rows: 400px
+            grid-template-areas: "img""texto"
+            @media screen and (min-width:768px)
+                grid-template-columns: 1fr 2fr
+                grid-template-areas: "img texto"
+            .imagen-somos
+                grid-area: img
+                text-align: center
+                background: #000000
+                align-content: center
+                @media screen and (min-width:768px)
+                    border-right: 1px solid #fff
+
+                img
+                    width: 90%
+                    margin: 10px
+                    object-fit: contain
+                    &:hover
+                        scale: (1.1)
+            .conteiner-texto
+                grid-area: texto
+                background: #161F30
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-rows: 50px auto
+                grid-template-areas: "a""b"
+                h2
+                    grid-area: a
+                    text-align: center
+                    @include centrar
+                    color: #9FC131
+                p
+                    grid-area: b
+                    margin: 5px
+                    @include centrar
+                    color: #fff
+    .seccion-Newsletter
+        grid-area: formu
+        text-align: center
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-areas: "st""uno"
+        row-gap: 10px
+        .conteiner-titulo
+            grid-area: st
+            background: grey
+            color: #fff
+            border-bottom: 2px solid black
+            @include  centrar
+        .conteiner-Newsletter
+            grid-area: uno
+            background: #161F30
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-areas: "a""b"
+            row-gap: 10px
+            .conteiner-titulo-descripccion
+                grid-area: a
+                max-width: 600px
+                margin: auto
+                text-align: center
+                color: #fff
+                h3
+                    color:  #9FC131
+                    text-transform: uppercase
+                
+            .conteiner-fromulario
+                grid-area: b
+                color: #fff
+                .conteiner-cuerpo
+                    max-width: 600px
+                    margin: auto
+                    form
+                        margin: 10px
+                        
+                button
+                    margin-bottom: 10px
+                    

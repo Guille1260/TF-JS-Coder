@@ -1,0 +1,51 @@
+.conteiner-header
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 40px 50px auto auto
+    grid-template-areas: "ofertas" "lupa" "menus" "bajo"
+    .conteiner-ofertas
+        grid-area: ofertas
+        background: #161F30
+        marquee
+            margin-top: 5px
+            color: #fff
+
+    .conteiner-lupa
+        grid-area: lupa
+        background: #173540
+        align-content: center
+        text-align: center
+        
+    .conteiner-superior
+        grid-area: menus
+        background: #161F30
+        .conteiner-logo
+            margin-left: 10px
+            width: 100px
+            .logo
+                width: 100%
+            
+    .conteiner-inferior
+        grid-area: bajo
+        background: #173540
+        display: flex
+        justify-content: center
+        @media screen and (min-width:1023px)
+            justify-content: end
+        .carrito
+            text-transform: uppercase
+            margin:  5px
+            color: #9FC131
+            @include efecto-link
+            &:hover
+                color: #fff
+            
+        .navegacion-sesion
+            margin:  5px
+            position: relative
+            color: #9FC131
+            &:hover
+                color: #fff
+            @media screen and (min-width:375px)
+                text-transform: uppercase
+                @include efecto-link
