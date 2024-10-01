@@ -8,7 +8,7 @@ const inputCorreio = document.getElementById("email-suscribirse").value;
 
 async function obtenerProductos() {
     try {
-          const respuesta = await fetch('https://raw.githubusercontent.com/Guille1260/tf-javaScript/main/json/productos.json');
+          const respuesta = await fetch('https://raw.githubusercontent.com/Guille1260/TF-JS-Coder/main/json/productos.json');
       
         if (!respuesta.ok) {
           throw new Error('Error en la solicitud: ' + respuesta.status);

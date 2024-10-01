@@ -5,7 +5,7 @@ const btnCrearUsuario = document.getElementById('btn-crear-cuenta');
 
 async function obtenerUsuarios() {
     try {
-          const respuesta = await fetch('https://raw.githubusercontent.com/Guille1260/tf-javaScript/main/json/usuarios.json');
+          const respuesta = await fetch('https://raw.githubusercontent.com/Guille1260/TF-JS-Coder/main/json/usuarios.json');
       
         if (!respuesta.ok) {
           throw new Error('Error en la solicitud: ' + respuesta.status);
