@@ -23,29 +23,22 @@ Proyecto en etapas finales.
 A continuación, se detallan las tareas que aún deben completarse para finalizar el proyecto:
 
 - **Implementación de funcionalidades:**  
-  .Implementar funcionalidad a la barra de busqueda ,solo es funcional en la pagina productos
-  .Iniciar sesion con gmail
-  .Envio de mail para recuperar contraseña
-  .agregar un nuevo usuario al archivo json utilizado como base de datos
+  - ***Implementar funcionalidad a la barra de busqueda ,solo es funcional en la pagina productos***
+  - ***Iniciar sesion con gmail***
+  - ***.Envio de mail para recuperar contraseña***
+  - ***.agregar un nuevo usuario al archivo json utilizado como base de datos***
 
 - **Documentación:**  
-  Mejorar la documentación del código y añadir comentarios donde sea necesario.
+  - ***Mejorar la documentación del código y añadir comentarios donde sea necesario.***
 
 - **Optimización:**  
-  Revisar y optimizar codigo
+  - ***Revisar y optimizar codigo***
 
 
 
 Estas tareas son fundamentales para asegurar que el proyecto esté completo y listo.
 
-## 🛠️ Abre y Ejecuta el Proyecto
-Para clonar y ejecutar el proyecto, sigue estos pasos:
 
-```bash
-$ git clone https://github.com/Guille1260/TF-Desarrollo-web-acuna.git
-$ cd path/to/the/file
-$ npm install
-$ npm init
 
 ## 🛠️ Herramientas Utilizadas
 - **HTML**: Estructura básica del sitio web.
