@@ -2,7 +2,7 @@ const formularioNewsletter = document.getElementById("form-footer");
 const btnEnviar = document.getElementById("btn-enviar-footer");
 const inputCorreo = document.getElementById("form-footer").value;
 
-console.log(inputCorreo)
+
 btnEnviar.addEventListener('click',e=>{
     e.preventDefault();
     validarFormularioFooter();

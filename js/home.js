@@ -77,6 +77,7 @@ btnSuscribirse.addEventListener('click',e=>{
 })
 async function Newsletter() {
   const mail = document.getElementById("email-suscribirse").value;
+
   if (mail.trim() === "" || mail === null) {
       mensajeCampo();
   } else if (validarEmail(mail)) {
